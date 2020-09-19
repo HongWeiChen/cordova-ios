@@ -25,13 +25,13 @@ relSource  = { :git => "https://github.com/apache/cordova-ios.git",
             :submodules => true }
 
 Pod::Spec.new do |s|
-  s.name         = "Cordova"
+  s.name         = "IOSCordova"
   s.version      = relVersion
   s.summary      = "Apache Cordova for iOS"
   s.homepage     = "https://github.com/apache/cordova-ios"
   s.license      = { :type => "Apache 2.0", :file => "LICENSE" }
   s.author       = "Apache Software Foundation"
-  s.platform     = :ios, "11.0"
+  s.platform     = :ios, "10.0"
   s.source       = relSource
   s.requires_arc = true
   s.preserve_paths = 'CordovaLib/cordova.js', 'CordovaLib/VERSION'

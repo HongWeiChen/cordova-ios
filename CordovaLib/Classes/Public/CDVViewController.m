@@ -333,7 +333,12 @@
     }
     // /////////////////
 
-    UIColor* bgColor = [UIColor colorNamed:@"BackgroundColor"] ?: UIColor.whiteColor;
+    UIColor* bgColor = nil;
+    if (@available(iOS 11, *)) {
+        bgColor = [UIColor colorNamed:@"BackgroundColor"] ?: UIColor.whiteColor;
+    } else {
+        bgColor = UIColor.whiteColor;
+    }
     [self.launchView setBackgroundColor:bgColor];
     [self.webView setBackgroundColor:bgColor];
 }
