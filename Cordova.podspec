@@ -25,7 +25,7 @@ relSource  = { :git => "https://github.com/apache/cordova-ios.git",
             :submodules => true }
 
 Pod::Spec.new do |s|
-  s.name         = "IOSCordova"
+  s.name         = "Cordova"
   s.version      = relVersion
   s.summary      = "Apache Cordova for iOS"
   s.homepage     = "https://github.com/apache/cordova-ios"
